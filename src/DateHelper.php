@@ -78,6 +78,66 @@ class DateHelper
         return (int)$this->curDateTime->format('N') === 7;
     }
 
+    public function isJanuary()
+    {
+        return (int)$this->curDateTime->format('m') === 1;
+    }
+
+    public function isFebruary()
+    {
+        return (int)$this->curDateTime->format('m') === 2;
+    }
+
+    public function isMarch()
+    {
+        return (int)$this->curDateTime->format('m') === 3;
+    }
+
+    public function isApril()
+    {
+        return (int)$this->curDateTime->format('m') === 4;
+    }
+
+    public function isMay()
+    {
+        return (int)$this->curDateTime->format('m') === 5;
+    }
+
+    public function isJune()
+    {
+        return (int)$this->curDateTime->format('m') === 6;
+    }
+
+    public function isJuly()
+    {
+        return (int)$this->curDateTime->format('m') === 7;
+    }
+
+    public function isAugust()
+    {
+        return (int)$this->curDateTime->format('m') === 8;
+    }
+
+    public function isSeptember()
+    {
+        return (int)$this->curDateTime->format('m') === 9;
+    }
+
+    public function isOctober()
+    {
+        return (int)$this->curDateTime->format('m') === 10;
+    }
+
+    public function isNovember()
+    {
+        return (int)$this->curDateTime->format('m') === 11;
+    }
+
+    public function isDecember()
+    {
+        return (int)$this->curDateTime->format('m') === 12;
+    }
+
     public function isLeapYear() {
         return (int)$this->curDateTime->format('L');
     }
