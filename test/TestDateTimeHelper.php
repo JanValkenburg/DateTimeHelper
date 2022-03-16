@@ -267,6 +267,20 @@ class TestDateHelper extends Tester
 
         $this->_isFalse($res);
     }
+
+    function isLeapYearTrue() {
+        $res = (new DateHelper('2020-01-01'))
+            ->isLeapYear();
+
+        $this->_isTrue($res);
+    }
+    
+    function isLeapYearFalse() {
+        $res = (new DateHelper('2021-01-01'))
+            ->isLeapYear();
+
+        $this->_isFalse($res);
+    }
 }
 
 (new TestDateHelper)->run();

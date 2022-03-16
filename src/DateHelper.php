@@ -77,4 +77,8 @@ class DateHelper
     {
         return (int)$this->curDateTime->format('N') === 7;
     }
+
+    public function isLeapYear() {
+        return (int)$this->curDateTime->format('L');
+    }
 }
